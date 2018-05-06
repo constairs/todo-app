@@ -1,0 +1,52 @@
+.NoteItem
+	background-color: #ffffff
+	padding: 20px
+	box-shadow: 0 0 10px rgba(0,0,0,.05)
+	border-radius: 3px
+	position: relative
+	width: 250px
+	float: left
+	height: auto
+	transition: box-shadow .3s
+	margin-bottom: 30px
+	word-wrap: break-word
+	white-space: pre-wrap
+	&:nth-child(4n+1)
+		margin-left: 0
+	&:nth-child(4n)
+		margin-right: 0
+	&:hover
+		box-shadow: 0 0 10px rgba(0,0,0,.4)
+
+	// width: calc(100% / 12 * 3 - 30px)
+	// min-height: 250px
+	// margin: 0 20px 40px 20px
+
+.NoteTitle
+	font-size: 22px
+	font-family: "Roboto", sans-serif
+	font-weight: 300
+	text-align: center
+	margin-bottom: 10px
+
+.NoteDeleteBtn
+	background-color: #cc1111
+	font-family: 'Roboto', sans-serif
+	height: 20px
+	width: 20px
+	border-radius: 100%
+	position: absolute
+	right: 10px
+	top: 10px
+	opacity: 0
+	transtition: all .3s
+	color: #ffffff
+	cursor: pointer
+	text-align: center
+	vertical-align: middle
+	line-height: 17px
+
+.NoteItem
+	&:hover
+		.NoteDeleteBtn
+			opacity: 1
